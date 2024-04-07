@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_news.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Card Layout -->
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Individual Card -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image View -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dummy"
+                android:padding="8dp" />
+
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Description TextView -->
+            <TextView
+                android:id="@+id/linkTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_below="@id/titleTextView"
+                android:layout_toEndOf="@id/imageView"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/blue"
+                android:padding="8dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/> <!-- Change to your desired grey color -->
+
+    </LinearLayout>
+
+</RelativeLayout>
